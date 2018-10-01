@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   namespace :api do
-    #API ROUTES SHOULD GO HERE
+    resource :ingredients
+    resource :recipes
+    resource :recipe_ingredients, only: [:create, :destroy, :new]
   end
 
   #Do not place any routes below this one

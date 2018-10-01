@@ -34,7 +34,7 @@ const App = ({ location }) => (
     <Switch>
       <Route exact path="/add_ingredients" component={AddIngredient} />
       <Route exact path="/add_recipe" component={AddRecipe} />
-      <Route exact path="/recipes/:id" component={Recipe} /> 
+      <Route exact path="/recipes/:id" component={Recipe} />
     </Switch>
   </Fragment>
 )
